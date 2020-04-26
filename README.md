@@ -8,4 +8,4 @@ You may go to [the Release Page](https://github.com/KSXGitHub/executable-factory
 
 ## License
 
-[MIT](https://git.io/JftVk)© [Hoàng Văn Khải](https://github.com/KSXGitHub/)
+[MIT](https://git.io/JftVk) © [Hoàng Văn Khải](https://github.com/KSXGitHub/).
