@@ -1,0 +1,50 @@
+name: Build and Release
+
+on:
+  push:
+    tags:
+      - '*'
+
+env:
+  PNPM_VERSION: 4.14.0
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install necessary packages
+        cmd: sudo apt install -y make bash
+      - name: Cache PNPM store
+        uses: actions/cache@v1.1.2
+        with:
+          path: ~/.pnpm-store
+          key: pnpm-${{ matrix.vars.id }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-${{ matrix.vars.id }}-${{ hashFiles('**/pnpm-lock.yaml') }}
+            pnpm-${{ matrix.vars.id }}-
+            pnpm-
+      - name: Install pnpm
+        cmd: ./ci/install-pnpm.bash
+      - name: Build binaries
+        cmd: make dist
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: ${{ github.ref }}
+          draft: false
+          prerelease: false
+      - name: Upload prettier to GitHub Release
+        uses: actions/upload-release-asset@v1.0.2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./dist/prettier
+          asset_name: prettier
+          asset_content_type: application/x-executable
