@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install necessary packages
-        cmd: sudo apt install -y make bash
+        run: sudo apt install -y make bash
       - name: Cache PNPM store
         uses: actions/cache@v1.1.2
         with:
@@ -26,9 +26,9 @@ jobs:
             pnpm-${{ matrix.vars.id }}-
             pnpm-
       - name: Install pnpm
-        cmd: ./ci/install-pnpm.bash
+        run: ./ci/install-pnpm.bash
       - name: Build binaries
-        cmd: make dist
+        run: make dist
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1.0.1
