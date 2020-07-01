@@ -1,7 +1,7 @@
 dependencies:
   prettier: 2.0.5
 devDependencies:
-  pkg: 4.4.8
+  pkg: 4.4.9
 lockfileVersion: 5.1
 packages:
   /@babel/parser/7.9.4:
@@ -560,7 +560,7 @@ packages:
       node: '>=8.6'
     resolution:
       integrity: sha512-q0M/9eZHzmr0AulXyPwNfZjtwZ/RBZlbN3K3CErVrk50T2ASYI7Bye0EvekFY3IP1Nt2DHu0re+V2ZHIpMkuWg==
-  /pkg-fetch/2.6.7:
+  /pkg-fetch/2.6.9:
     dependencies:
       '@babel/runtime': 7.9.2
       byline: 5.0.0
@@ -576,8 +576,8 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-hQ+M53fphA300EkIvNoIxEdFltWcsDOqHZlaFzWJ78wIuFTIT7OrnXUQMAGC6qLkXq7eWCMU/4pTWsFvprUZMg==
-  /pkg/4.4.8:
+      integrity: sha512-EnVR8LRILXBvaNP+wJOSY02c3+qDDfyEyR+aqAHLhcc9PBnbxFT9UZ1+If49goPQzQPn26TzF//fc6KXZ0aXEg==
+  /pkg/4.4.9:
     dependencies:
       '@babel/parser': 7.9.4
       '@babel/runtime': 7.9.2
@@ -588,14 +588,14 @@ packages:
       into-stream: 5.1.1
       minimist: 1.2.5
       multistream: 2.1.1
-      pkg-fetch: 2.6.7
+      pkg-fetch: 2.6.9
       progress: 2.0.3
       resolve: 1.17.0
       stream-meter: 1.0.4
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-Fqqv0iaX48U3CFZxd6Dq6JKe7BrAWbgRAqMJkz/m8W3H5cqJ6suvsUWe5AJPRlN/AhbBYXBJ0XG9QlYPTXcVFA==
+      integrity: sha512-FK4GqHtcCY2PPPVaKViU0NyRzpo6gCS7tPKN5b7AkElqjAOCH1bsRKgohEnxThr6DWfTGByGqba2YHGR/BqbmA==
   /prelude-ls/1.1.2:
     dev: true
     engines:
@@ -860,5 +860,5 @@ packages:
     resolution:
       integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
 specifiers:
-  pkg: 4.4.8
+  pkg: 4.4.9
   prettier: 2.0.5
