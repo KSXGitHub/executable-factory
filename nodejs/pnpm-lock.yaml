@@ -1,5 +1,5 @@
 dependencies:
-  prettier: 2.1.0
+  prettier: 2.1.1
 devDependencies:
   pkg: 4.4.9
 lockfileVersion: 5.1
@@ -602,13 +602,13 @@ packages:
       node: '>= 0.8.0'
     resolution:
       integrity: sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
-  /prettier/2.1.0:
+  /prettier/2.1.1:
     dev: false
     engines:
       node: '>=10.13.0'
     hasBin: true
     resolution:
-      integrity: sha512-lz28cCbA1cDFHVuY8vvj6QuqOwIpyIfPUYkSl8AZ/vxH8qBXMMjE2knfLHCrZCmUsK/H1bg1P0tOo0dJkTJHvw==
+      integrity: sha512-9bY+5ZWCfqj3ghYBLxApy2zf6m+NJo5GzmLTpr9FsApsfjriNnS2dahWReHMi7qNPhhHl9SYHJs2cHZLgexNIw==
   /process-nextick-args/2.0.1:
     dev: true
     resolution:
@@ -861,4 +861,4 @@ packages:
       integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
 specifiers:
   pkg: 4.4.9
-  prettier: 2.1.0
+  prettier: 2.1.1
