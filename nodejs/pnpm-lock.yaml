@@ -1,14 +1,14 @@
 lockfileVersion: 5.3
 
 specifiers:
-  pkg: 5.3.2
+  pkg: 5.3.3
   prettier: 2.4.1
 
 dependencies:
   prettier: 2.4.1
 
 devDependencies:
-  pkg: 5.3.2
+  pkg: 5.3.3
 
 packages:
 
@@ -610,8 +610,8 @@ packages:
       - supports-color
     dev: true
 
-  /pkg/5.3.2:
-    resolution: {integrity: sha512-78X8Tt71TI11XjkZm/r9shTdFRooFiiRcT8nfYeeOou5VKCkCysQauwAAkJKb5yjfrUhk3CBNL4zv22/iLpdnw==}
+  /pkg/5.3.3:
+    resolution: {integrity: sha512-48qPxwyPvKfUuXxeK+kS3mBvfWWTX2khAdceDThbWCc8OUz3RFyO1Ft8SVkq2gQfPU2DtiPtWaf2SKH0Dlx59g==}
     hasBin: true
     peerDependencies:
       node-notifier: '>=9.0.1'
