@@ -4,7 +4,7 @@
     "prettier": "2.6.1"
   },
   "devDependencies": {
-    "pkg": "5.3.3"
+    "pkg": "5.7.0"
   },
   "engines": {
     "node": "16.12.0"
